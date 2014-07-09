@@ -7,6 +7,13 @@
 #
 ###
 
+###
+#
+# usage:
+# ./mailsender.sh -f "from" -t "to" -c "cc" -b "bcc" -s "subject" -e "character code" -a "path of attach file" "body"
+#
+###
+
 CMD_MAIL="/usr/sbin/sendmail"
 
 ###
