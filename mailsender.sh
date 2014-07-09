@@ -101,7 +101,7 @@ SUBJECT_ENC="=?${ENC_MAIL}?B?$(echo ${SUBJECT} | nkf ${ENC_NKF} | base64 | tr -d
 BODY_ENC="$(echo -e "${BODY}" | nkf ${ENC_NKF})"
 ATTACH_ENC="=?${ENC_MAIL}?B?$(basename ${ATTACH} | nkf ${ENC_NKF} | base64 | tr -d '\n')?="
 
-# image/jpeg;  etc... (includeing ";" is ok.)
+# image/jpeg;  etc... (including ";" is ok.)
 MIME_ATTACH="$(file -i ${ATTACH} | cut -d ' ' -f2)"
 
 ### send email
