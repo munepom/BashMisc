@@ -38,8 +38,8 @@ ENC_BASE="$(echo $LANG | cut -d '.' -f 2)"
 ENC_MAIL="iso-2022-jp"
 ENC_NKF="-j"
 
-#BOUNDARY="--$(uuidgen)" ## Generates Unique ID
-BOUNDARY="--$(date +%Y%m%d%H%M%N)" ## Generates Unique ID
+BOUNDARY="--$(uuidgen)" ## Generates Unique ID
+#BOUNDARY="--$(date +%Y%m%d%H%M%N)" ## Generates Simple ID
 FILE_EMAIL="/tmp/email_$(date +'%Y%m%d_%H%M%S').out"
 
 while getopts ":a:b:c:e:f:s:t:" opt; do
