@@ -1,0 +1,3 @@
+# if big-endian    then 0
+# if little-endign then 1
+echo -n I | od -to2 | head -n1 | cut -f2 -d" " | cut -c6
